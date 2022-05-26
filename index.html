@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <title>Schere Stein Papier</title>
+</head>
+
+<body>
+
+    <!-- MAIN HTML -->
+
+    <h1><span>Schere</span><span> Stein</span> <span> Papier</span> </h1>
+    <p>Kennst du dieses Spiel? - Hier können wir zusammen spielen. Mal sehen, wer mehr Glück hat. Let's go!</p>
+    <form onsubmit="return false;">
+        <section class="rounds">
+            <h2> Wie viele Runden wollen wir Spielen?</h2>
+            <article>
+                <div>
+                    <input type="radio" name="rounds" id="fiveRounds">
+                    <label for="fiveRounds">5</label>
+                </div>
+                <div>
+                    <input type="radio" name="rounds" id="tenRounds">
+                    <label for="tenRounds">10</label>
+                </div>
+                <div>
+                    <input type="radio" name="rounds" id="fifteenRounds">
+                    <label for="fifteenRounds">15</label>
+                </div>
+                <div>
+                    <input type="radio" name="rounds" id="twentyRounds">
+                    <label for="twentyRounds">20</label>
+                </div>
+            </article>
+        </section>
+        <section class="spielzug">
+            <h2>Wähle deinen gewünschten Spielzug</h2>
+            <article>
+                <div class="schere">
+
+                    <label for="schere" id="schereLabel"><i class=" las la-hand-scissors"></i></label>
+                    <input type="radio" name="einsatzSpieler" id="schere">
+                </div>
+                <div class="stein">
+
+                    <label for=""><i class="las la-hand-rock"></i></label>
+                    <input type="radio" name="einsatzSpieler" id="stein">
+                </div>
+                <div class="papier">
+
+                    <label for=""><i class="las la-hand-paper"></i></label>
+                    <input type="radio" name="einsatzSpieler" id="papier">
+                </div>
+            </article>
+        </section>
+        <input type="submit" value="Schnick Schnack Schnuck" onclick="play()" class="play">
+    </form>
+
+    <section class="spielstand">
+        <div>
+            <h3>DU</h3>
+            <p id="outputUserWins">0</p>
+        </div>
+        <div>
+            <h3>ICH</h3>
+            <p id="outputComputerWins">0</p>
+        </div>
+    </section>
+    <button onclick="restart()" class="restart">Restart</button>
+
+    <!-- HTML DURCH JS GESTARTET -->
+
+    <div id="result">
+        <p onclick="hideResult()">x</p>
+        <p id="winnerIs">Ich habe gewonnen!</p>
+    </div>
+
+    <div id="spieler"></div>
+    <div id="computer"></div>
+    <div id="rundenzaehler"></div>
+
+    <audio id="audio1" preload="auto">
+        <source src="assets/sounds/gameOver.mp3">
+    </audio>
+    <audio id="audio2" preload="auto">
+        <source src="assets/sounds/success.mp3">
+    </audio>
+    <audio id="audio3" preload="auto">
+        <source src="assets/sounds/gleichstand.mp3">
+    </audio>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+<!--<img src="assets/img/rock-paper-scissors-g74198a27e_640.png" alt="Stein">  -->
+
+<!-- <img src="assets/img/rock-paper-scissors-gc0bdb4aed_640.png" alt="Papier"> -->
+
+<!-- <img src="assets/img/rock-paper-scissors-gee05864ac_640.png" alt="Schere"> -->
