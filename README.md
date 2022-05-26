@@ -8,9 +8,9 @@ Probiers hier aus:
 https://werthmannsupercode.github.io/js_schere_stein_papier/
 
 Verwendete Technologien:
--HTML 🖊
--CSS 🖌
--JS 🔮
+- HTML 🖊
+- CSS 🖌
+- JS 🔮
 
 Leider gibt es das Spiel nur für den Desktop 💻. Sorry 🤗
 
