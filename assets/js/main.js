@@ -146,7 +146,7 @@ function play() {
             }
 
             else if (sumDu == sumIch) {
-                winnerIs.innerHTML = "Gleichstand<br>🎲 Gleich nochmal! 🎲";
+                winnerIs.innerHTML = "Gleichstand<br>Gleich nochmal!";
                 schere.checked = false;
                 stein.checked = false;
                 papier.checked = false;
@@ -278,7 +278,7 @@ function play() {
             }
 
             else if (sumDu == sumIch) {
-                winnerIs.innerHTML = "Gleichstand<br>🎲 Gleich nochmal! 🎲";
+                winnerIs.innerHTML = "Gleichstand<br>Gleich nochmal!";
                 schere.checked = false;
                 stein.checked = false;
                 papier.checked = false;
@@ -410,7 +410,7 @@ function play() {
             }
 
             else if (sumDu == sumIch) {
-                winnerIs.innerHTML = "Gleichstand<br>🎲 Gleich nochmal! 🎲";
+                winnerIs.innerHTML = "Gleichstand<br>Gleich nochmal!";
                 schere.checked = false;
                 stein.checked = false;
                 papier.checked = false;
@@ -542,7 +542,7 @@ function play() {
             }
 
             else if (sumDu == sumIch) {
-                winnerIs.innerHTML = "Gleichstand<br>🎲 Gleich nochmal! 🎲";
+                winnerIs.innerHTML = "Gleichstand<br>Gleich nochmal!";
                 schere.checked = false;
                 stein.checked = false;
                 papier.checked = false;
