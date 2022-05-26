@@ -152,7 +152,8 @@ function play() {
                 papier.checked = false;
                 fiveRounds.checked = false;
                 result.style.display = "block";
-                result.innerHTML = "";
+                winnerIs.style.color = "black";
+                spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio3.play();
             }
