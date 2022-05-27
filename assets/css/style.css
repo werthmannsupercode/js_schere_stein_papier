@@ -18,47 +18,69 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    margin: 5vh;
-}
-
 /* MAIN STYLES ===================================================== */
-
-h1 {
-    text-align: center;
-    font-family: stempel;
-    font-size: 10rem;
-}
-
-h1 span:nth-of-type(1) {
-    color: green;
-}
-
-h1 span:nth-of-type(2) {
-    color: blue;
-}
-
-h1 span:nth-of-type(3) {
-    color: orange;
-}
-
-p {
-    font-family: 'Indie Flower', cursive;
-    font-size: 2.5rem;
+main {
+    margin: 1vh 25vw;
+    border-radius: 20px;
+    background-color: rgb(255, 242, 0);
+    border: 2px solid orange;
     text-align: center;
     padding-bottom: 3vh;
 }
 
+main h1 {
+    text-align: center;
+    font-family: stempel;
+    font-size: 8rem;
+    padding-top: 3vh;
+}
+
+main h1 span:nth-of-type(1) {
+    color: green;
+}
+
+main h1 span:nth-of-type(2) {
+    color: blue;
+}
+
+main h1 span:nth-of-type(3) {
+    color: orange;
+}
+
+main p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 6vw 2vh 6vw;
+}
+
 /* FORM -------------------------------------------------- */
 
-form {
+main form {
     text-align: center;
+}
+
+.rounds,
+.spielzug {
+    border-radius: 5px;
+    margin: 0 8vw;
+    margin-bottom: 2vh;
+    background-color: white;
+    padding-top: 2vh;
 }
 
 .rounds h2,
 .spielzug h2 {
     font-family: 'Patrick Hand', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+.rounds h2 {
+    color: red;
+}
+
+.spielzug h2 {
+    color: blue;
 }
 
 .rounds article {
@@ -73,23 +95,27 @@ form {
 .rounds article div input,
 .rounds article div label {
     font-family: 'Indie Flower', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .rounds article div input {
     -webkit-appearance: none;
     border: 2px solid black;
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
 }
 
 .rounds article div input:checked {
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: red;
+    border: none;
+    box-shadow: 0 0 10px red;
 }
 
 .rounds article div label {
     padding-left: 10px;
+    display: inline;
+    vertical-align: top;
 }
 
 .spielzug article {
@@ -129,25 +155,40 @@ form {
 
 
 #schere:checked {
-    background-color: rgba(128, 128, 128, 0.5);
+    border: 4px solid blue;
+    box-shadow: 0 0 10px blue;
 }
 
 #stein:checked {
-    background-color: rgba(128, 128, 128, 0.5);
+    border: 4px solid blue;
+    box-shadow: 0 0 10px blue;
 }
 
 #papier:checked {
-    background-color: rgba(128, 128, 128, 0.5);
+    border: 4px solid blue;
+    box-shadow: 0 0 10px blue;
 }
 
 .play,
 .restart {
-    background-color: rgba(128, 128, 128, 0.5);
-    border: 2px solid black;
+    background-color: white;
+    /* border: 2px solid black; */
     font-family: 'Patrick Hand', cursive;
-    font-size: 2.5rem;
     padding: 0.5vh 0.5vw;
     border-radius: 10px;
+    color: orange;
+    border: none;
+}
+
+.play:hover,
+.restart:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.play {
+    font-size: 2rem;
 }
 
 /* SPIELSTAND ------------------------------------------------ */
@@ -164,44 +205,45 @@ form {
 
 .spielstand div h3 {
     font-family: 'Patrick Hand', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
 }
 
 .spielstand div p {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 9rem;
-    height: 91px;
+    font-size: 7rem;
+    height: 71px;
 }
 
 .restart {
-    margin: 0 45vw 0 45vw;
     font-size: 2rem;
+    text-align: center;
 }
 
 /* POP-UP SPIELERGEBNIS ---------------------------------------- */
 
 #result {
     position: fixed;
-    background-color: white;
-    border: 2px solid black;
-    top: 40vh;
-    left: 25vw;
-    width: 50vw;
-    padding: 1vh 5vw 5vh 5vw;
+    top: 55vh;
+    left: 35vw;
+    width: 30vw;
+    padding: 2vh 2vw;
     border-radius: 20px;
     font-family: 'Patrick Hand', cursive;
-    font-size: 5rem;
+    font-size: 2rem;
     display: none;
 }
 
 #result p {
     font-family: 'Patrick Hand', cursive;
-    font-size: 5rem;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
 }
 
 #result p:nth-of-type(1) {
     text-align: right;
+    color: white;
 }
 
 #result p:nth-of-type(1):hover {
@@ -226,7 +268,7 @@ form {
 
 #spieler img,
 #computer img {
-    width: 30vw;
+    width: 25vw;
     object-fit: cover;
 }
 
@@ -234,7 +276,7 @@ form {
 
 #rundenzaehler {
     position: fixed;
-    top: 40px;
+    top: 20px;
     right: 40px;
     font-family: sans-serif;
     color: green;

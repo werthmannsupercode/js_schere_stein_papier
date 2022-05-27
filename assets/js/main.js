@@ -126,7 +126,7 @@ function play() {
                 papier.checked = false;
                 fiveRounds.checked = false;
                 result.style.display = "block";
-                winnerIs.style.color = "green";
+                result.style.backgroundColor = "green";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio2.play();
@@ -139,7 +139,7 @@ function play() {
                 papier.checked = false;
                 fiveRounds.checked = false;
                 result.style.display = "block";
-                winnerIs.style.color = "red";
+                result.style.backgroundColor = "red";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio1.play();
@@ -152,7 +152,7 @@ function play() {
                 papier.checked = false;
                 fiveRounds.checked = false;
                 result.style.display = "block";
-                winnerIs.style.color = "black";
+                result.style.backgroundColor = "blue";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio3.play();
@@ -259,7 +259,7 @@ function play() {
                 papier.checked = false;
                 tenRounds.checked = false;
                 result.style.display = "block";
-                winnerIs.style.color = "green";
+                result.style.backgroundColor = "green";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio2.play();
@@ -272,7 +272,7 @@ function play() {
                 papier.checked = false;
                 tenRounds.checked = false;
                 result.style.display = "block";
-                winnerIs.style.color = "red";
+                result.style.backgroundColor = "red";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio1.play();
@@ -285,6 +285,7 @@ function play() {
                 papier.checked = false;
                 tenRounds.checked = false;
                 result.style.display = "block";
+                result.style.backgroundColor = "blue";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio3.play();
@@ -391,7 +392,7 @@ function play() {
                 papier.checked = false;
                 fifteenRounds.checked = false;
                 result.style.display = "block";
-                winnerIs.style.color = "green";
+                result.style.backgroundColor = "green";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio2.play();
@@ -404,7 +405,7 @@ function play() {
                 papier.checked = false;
                 fifteenRounds.checked = false;
                 result.style.display = "block";
-                winnerIs.style.color = "red";
+                result.style.backgroundColor = "red";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio1.play();
@@ -417,6 +418,7 @@ function play() {
                 papier.checked = false;
                 fifteenRounds.checked = false;
                 result.style.display = "block";
+                result.style.backgroundColor = "blue";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio3.play();
@@ -523,7 +525,7 @@ function play() {
                 papier.checked = false;
                 twentyRounds.checked = false;
                 result.style.display = "block";
-                winnerIs.style.color = "green";
+                result.style.backgroundColor = "green";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio2.play();
@@ -536,7 +538,7 @@ function play() {
                 papier.checked = false;
                 twentyRounds.checked = false;
                 result.style.display = "block";
-                winnerIs.style.color = "red";
+                result.style.backgroundColor = "red";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio1.play();
@@ -549,6 +551,7 @@ function play() {
                 papier.checked = false;
                 twentyRounds.checked = false;
                 result.style.display = "block";
+                result.style.backgroundColor = "blue";
                 spieler.innerHTML = "";
                 computer.innerHTML = "";
                 audio3.play();

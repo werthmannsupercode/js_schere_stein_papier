@@ -14,67 +14,68 @@
 
 <body>
 
-    <!-- MAIN HTML -->
+    <main>
+        <!-- MAIN HTML -->
 
-    <h1><span>Schere</span><span> Stein</span> <span> Papier</span> </h1>
-    <p>Kennst du dieses Spiel? - Hier können wir zusammen spielen. Mal sehen, wer mehr Glück hat. Let's go!</p>
-    <form onsubmit="return false;">
-        <section class="rounds">
-            <h2> Wie viele Runden wollen wir Spielen?</h2>
-            <article>
-                <div>
-                    <input type="radio" name="rounds" id="fiveRounds">
-                    <label for="fiveRounds">5</label>
-                </div>
-                <div>
-                    <input type="radio" name="rounds" id="tenRounds">
-                    <label for="tenRounds">10</label>
-                </div>
-                <div>
-                    <input type="radio" name="rounds" id="fifteenRounds">
-                    <label for="fifteenRounds">15</label>
-                </div>
-                <div>
-                    <input type="radio" name="rounds" id="twentyRounds">
-                    <label for="twentyRounds">20</label>
-                </div>
-            </article>
+        <h1><span>Schere</span><span> Stein</span> <span> Papier</span> </h1>
+        <p>Kennst du dieses Spiel? - Hier können wir zusammen spielen. Mal sehen, wer mehr Glück hat. Let's go!</p>
+        <form onsubmit="return false;">
+            <section class="rounds">
+                <h2> Wie viele Runden wollen wir spielen?</h2>
+                <article>
+                    <div>
+                        <input type="radio" name="rounds" id="fiveRounds">
+                        <label for="fiveRounds">5</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rounds" id="tenRounds">
+                        <label for="tenRounds">10</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rounds" id="fifteenRounds">
+                        <label for="fifteenRounds">15</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rounds" id="twentyRounds">
+                        <label for="twentyRounds">20</label>
+                    </div>
+                </article>
+            </section>
+            <section class="spielzug">
+                <h2>Wähle deinen gewünschten Spielzug</h2>
+                <article>
+                    <div class="schere">
+
+                        <label for="schere" id="schereLabel"><i class=" las la-hand-scissors"></i></label>
+                        <input type="radio" name="einsatzSpieler" id="schere">
+                    </div>
+                    <div class="stein">
+
+                        <label for=""><i class="las la-hand-rock"></i></label>
+                        <input type="radio" name="einsatzSpieler" id="stein">
+                    </div>
+                    <div class="papier">
+
+                        <label for=""><i class="las la-hand-paper"></i></label>
+                        <input type="radio" name="einsatzSpieler" id="papier">
+                    </div>
+                </article>
+            </section>
+            <input type="submit" value="Schnick Schnack Schnuck" onclick="play()" class="play">
+        </form>
+
+        <section class="spielstand">
+            <div>
+                <h3>SPIELER</h3>
+                <p id="outputUserWins">0</p>
+            </div>
+            <div>
+                <h3>COMPUTER</h3>
+                <p id="outputComputerWins">0</p>
+            </div>
         </section>
-        <section class="spielzug">
-            <h2>Wähle deinen gewünschten Spielzug</h2>
-            <article>
-                <div class="schere">
-
-                    <label for="schere" id="schereLabel"><i class=" las la-hand-scissors"></i></label>
-                    <input type="radio" name="einsatzSpieler" id="schere">
-                </div>
-                <div class="stein">
-
-                    <label for=""><i class="las la-hand-rock"></i></label>
-                    <input type="radio" name="einsatzSpieler" id="stein">
-                </div>
-                <div class="papier">
-
-                    <label for=""><i class="las la-hand-paper"></i></label>
-                    <input type="radio" name="einsatzSpieler" id="papier">
-                </div>
-            </article>
-        </section>
-        <input type="submit" value="Schnick Schnack Schnuck" onclick="play()" class="play">
-    </form>
-
-    <section class="spielstand">
-        <div>
-            <h3>DU</h3>
-            <p id="outputUserWins">0</p>
-        </div>
-        <div>
-            <h3>ICH</h3>
-            <p id="outputComputerWins">0</p>
-        </div>
-    </section>
-    <button onclick="restart()" class="restart">Restart</button>
-
+        <input type="submit" value="restart" onclick="restart()" class="restart">
+    </main>
     <!-- HTML DURCH JS GESTARTET -->
 
     <div id="result">
